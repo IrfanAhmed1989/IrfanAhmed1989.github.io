@@ -1,0 +1,37 @@
+:root{
+  --bg:#0b0d10; --card:#12151a; --text:#e9eef2; --muted:#aab4bf; --accent:#4da3ff; --line:#1c2129;
+  --btn:#1f6feb; --btnText:#ffffff;
+}
+:root.light{
+  --bg:#ffffff; --card:#f7f9fc; --text:#0b1220; --muted:#445061; --accent:#0059c9; --line:#e7ecf2;
+  --btn:#0b5ed7; --btnText:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent);text-decoration:none}
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--line)}
+.brand{font-weight:800;border:2px solid var(--accent);padding:4px 8px;border-radius:8px}
+.nav nav{display:flex;gap:16px;align-items:center}
+#modeBtn{background:transparent;border:1px solid var(--line);color:var(--text);padding:4px 10px;border-radius:8px;cursor:pointer}
+main{max-width:1080px;margin:0 auto;padding:24px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin:32px 0}
+.hero-text h1{font-size:42px;margin:0 0 8px}
+.subtitle{color:var(--muted);margin-top:0}
+.summary{line-height:1.6;color:var(--text)}
+.cta{display:flex;gap:12px;margin-top:18px}
+.btn{border:1px solid var(--line);padding:10px 14px;border-radius:10px;color:var(--text)}
+.btn.primary{background:var(--btn);border-color:var(--btn);color:var(--btnText)}
+.hero-badge .badge{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:12px}
+.section{margin:56px 0}
+.section h2{margin:0 0 12px;font-size:28px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);padding:8px 12px;border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:12px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0}
+.card p{margin:0;color:var(--muted)}
+.card .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.tag{font-size:12px;border:1px solid var(--line);padding:4px 8px;border-radius:999px;color:var(--muted)}
+.more{margin-top:12px}
+.footer{border-top:1px solid var(--line);padding:16px;text-align:center;color:var(--muted);background:var(--card)}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.hero-text h1{font-size:34px}}
