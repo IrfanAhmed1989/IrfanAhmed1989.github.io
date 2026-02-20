@@ -4,49 +4,47 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Projects — Irfan Ahmed</title>
-<style>
-  :root{ --bg:#fff; --fg:#111; --card:#f6f8fa; --muted:#666; --shadow:0 4px 14px rgba(0,0,0,.08); --link:#0366d6;}
-  @media (prefers-color-scheme: dark){ :root{ --bg:#0d1117; --fg:#c9d1d9; --card:#161b22; --muted:#8b949e; --shadow:0 4px 14px rgba(0,0,0,.5); --link:#58a6ff; } }
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:40px;background:var(--bg);color:var(--fg);line-height:1.6}
-  a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-  .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-  .pill{background:var(--card);border-radius:999px;padding:8px 12px;box-shadow:var(--shadow);font-weight:600}
-  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-  .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:var(--shadow)}
-  .muted{color:var(--muted)}
-</style>
+<link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-<h1>Projects</h1>
-<div class="row">
-  <a class="pill" href="index.html">🏠 Home</a>
-  <a class="pill" href="resume.pdf">📄 Resume</a>
-  <a class="pill" href="mailto:engineerirfan21@gmail.com">✉️ Email</a>
-  <a class="pill" href="https://github.com/IrfanAhmed1989" target="_blank" rel="noopener">🐙 GitHub</a>
-</div>
-<p class="muted">Selected public repositories from <a href="https://github.com/IrfanAhmed1989" target="_blank" rel="noopener">github.com/IrfanAhmed1989</a>.</p>
-<div id="list" class="grid"></div>
+  <nav class="topnav">
+    <div class="row">
+      index.htmlHome</a>
+      projects.htmlProjects</a>
+      experience.htmlExperience</a>
+      resume.pdfResume</a>
+      https://github.com/IrfanAhmed1989GitHub</a>
+      mailto:engineerirfan21@gmail.comEmail</a>
+    </div>
+  </nav>
 
-<script>
-(async () => {
-  const user = "IrfanAhmed1989";
-  const res = await fetch(`https://api.github.com/users/${user}/repos?per_page=100&sort=updated`);
-  const data = await res.json();
-  const list = document.getElementById('list');
-  data
-    .filter(r => !r.fork)
-    .slice(0, 24)
-    .forEach(r => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <h3><a href="${r.html_url}" target="_blank" rel="noopener">${r.name}</a></h3>
-        <p>${(r.description||'').substring(0,160)}</p>
-        <p>★ ${r.stargazers_count} • ${r.language || '—'}</p>
-      `;
-      list.appendChild(card);
-    });
-})();
-</script>
+  <main class="wrap">
+    <h1>Projects</h1>
+    <p class="small">Auto‑listing latest repositories from GitHub.</p>
+    <div id="list" class="grid"></div>
+  </main>
+
+  <script>
+  (async () => {
+    const user = "IrfanAhmed1989";
+    const res = await fetch(`https://api.github.com/users/${user}/repos?per_page=100&sort=updated`);
+    const data = await res.json();
+    const list = document.getElementById('list');
+    data
+      .filter(r => !r.fork)
+      .slice(0, 24)
+      .forEach(r => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h3>${r.html_url}${r.name}</a></h3>
+          <p>${(r.description||'').substring(0,160)}</p>
+          <p>★ ${r.stargazers_count} • ${r.language || '—'}</p>
+        `;
+        list.appendChild(card);
+      });
+  })();
+  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -4,72 +4,54 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Irfan Ahmed — Engineer & Automation</title>
-<meta name="description" content="Irfan Ahmed — Electrical/IT/Software engineer building practical, reliable automation. SCADA, maintenance, Linux/macOS, terminal-first workflows.">
-<style>
-  :root{
-    --bg:#ffffff; --fg:#1b1f23; --muted:#5c6670; --card:#f6f8fa; --link:#0366d6; --accent:#2b90d9;
-    --shadow: 0 4px 14px rgba(0,0,0,.08);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#0d1117; --fg:#c9d1d9; --muted:#8b949e; --card:#161b22; --link:#58a6ff; --accent:#58a6ff; --shadow: 0 4px 14px rgba(0,0,0,.5);}
-  }
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
-  .wrap{max-width:920px;margin:40px auto;padding:0 20px}
-  h1{font-size:36px;margin-bottom:8px}
-  h2{margin-top:28px}
-  .muted{color:var(--muted)}
-  a{color:var(--link);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));}
-  .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
-  .row{display:flex;gap:10px;flex-wrap:wrap}
-  .pill{background:var(--card);border-radius:999px;padding:8px 12px;box-shadow:var(--shadow);font-weight:600}
-  .pill:hover{filter:brightness(1.05)}
-  .kpi{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-  .kpi div{background:var(--card);padding:8px 10px;border-radius:10px;box-shadow:var(--shadow);font-size:14px}
-  .footer{margin:40px 0 20px;color:var(--muted);font-size:14px}
-  .exp{display:grid;gap:16px}
-  .exp .card h3{margin:0 0 6px 0}
-  .small{font-size:14px;color:var(--muted)}
-  ul.tight{margin:8px 0 0 18px}
-</style>
+<link rel="stylesheet" href="assets/site.css" />
+<meta name="description" content="Irfan Ahmed — Electrical/IT/Software engineer building practical, reliable automation. SCADA/MMIS, preventive maintenance, Linux/macOS, terminal-first workflows.">
 </head>
 <body>
+  <nav class="topnav">
+    <div class="row">
+      index.htmlHome</a>
+      projects.htmlProjects</a>
+      experience.htmlExperience</a>
+      resume.pdfResume</a>
+      https://github.com/IrfanAhmed1989GitHub</a>
+      mailto:engineerirfan21@gmail.comEmail</a>
+    </div>
+  </nav>
+
   <main class="wrap">
     <header>
       <h1>Hi, I'm Irfan Ahmed 👋</h1>
-      <p class="muted">Engineer across Electrical, IT, and Software — I build practical, reliable automation that solves real problems.</p>
-      <div class="row" style="margin-top:10px">
-        resume.pdf📄 Resume (PDF)</a>
-        projects.html📁 Projects</a>
-        mailto:engineerirfan21@gmail.com✉️ Email</a>
-        https://github.com/IrfanAhmed1989🐙 GitHub</a>
-      </div>
+      <p class="small">Electrical & IT Engineer (10+ yrs) — SCADA/MMIS, preventive maintenance, availability reporting, troubleshooting, Linux/automation. MS in CS in progress.</p>
       <div class="kpi">
         <div>Linux / macOS Automation</div>
         <div>SCADA & Controls</div>
         <div>Python / Shell / Java</div>
         <div>GitHub Pages / Actions</div>
       </div>
+      <p>
+        resume.pdfDownload Resume</a>
+        <span class="badge" id="resumeCount">0</span>
+      </p>
     </header>
 
     <section>
       <h2>About</h2>
       <p>
-        My work spans maintenance engineering, SCADA/MMIS systems, troubleshooting, Linux automation,
-        availability reporting, and site/project coordination. I keep systems <b>simple, fast, and dependable</b>.
+        I focus on practical, clean, reliable engineering — from maintenance and SCADA/MMIS to Linux automation,
+        availability reporting, and site/project coordination. (Experience sections derived from my uploaded résumé.) [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)
       </p>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <div class="row">
-        <span class="pill">SCADA • Controls • Maintenance</span>
-        <span class="pill">Linux (Ubuntu) • macOS • Networking</span>
-        <span class="pill">Python • Bash/Shell • Java</span>
-        <span class="pill">GitHub • GitHub Actions • Virtualization</span>
-        <span class="pill">CI/CD • Logs • Monitoring</span>
-        <span class="pill">Automation • launchd • cron</span>
+      <div class="kpi">
+        <div>SCADA • MMIS • Preventive Maintenance</div>
+        <div>Availability Reporting • Failure Trends</div>
+        <div>Python • SQL • Java • C++</div>
+        <div>Linux (Ubuntu) • macOS • Automation</div>
+        <div>LV Panels • SMDB • DB • Hi‑pot/Insulation Tests</div>
+        <div>HVAC • Fire Detection & Alarm • Pumps</div>
       </div>
     </section>
 
@@ -82,11 +64,11 @@
         </div>
         <div class="card">
           <h3>Portfolio + Resume Auto‑Updater</h3>
-          <p>One command to keep GitHub Pages portfolio and resume.pdf up‑to‑date at all times.</p>
+          <p>One command keeps my GitHub Pages portfolio and resume.pdf always up‑to‑date.</p>
         </div>
         <div class="card">
           <h3>Global Remote Tagger</h3>
-          <p>TLD‑based classifier (.ca, .co.uk, .de, .sg) to enrich “Remote – Country” labels for worldwide roles.</p>
+          <p>TLD‑based classifier (.ca, .co.uk, .de, .sg) that labels “Remote – Country” across rich countries.</p>
         </div>
         <div class="card">
           <h3>Engineering Automation Scripts</h3>
@@ -97,66 +79,59 @@
 
     <section>
       <h2>Experience</h2>
-      <div class="exp">
+      <div class="grid">
         <div class="card">
           <h3>Operations & Maintenance Engineer — Atlanta Airport SkyTrain (APM)</h3>
           <div class="small">Jan 2021–Present • Atlanta, GA</div>
           <ul class="tight">
-            <li>Preventive maintenance via MMIS; SCADA ops; failure trend analysis; downtime/shift/availability reporting (DOA/STIP).</li>
-            <li>Coordinate documentation changes with engineering; train & oversee technicians/subcontractors; enforce safety; schedule work.</li>
+            <li>Preventive maintenance via MMIS; SCADA ops; failure trend analysis; availability/downtime/shift reporting (DOA/STIP).</li>
+            <li>Doc changes with engineering; train & oversee technicians/subcontractors; safety; scheduling.</li>
           </ul>
-          <div class="small">From résumé details. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
+          <div class="small">From résumé. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
         </div>
         <div class="card">
           <h3>Electrical Engineer — Jupiter EMC LLC</h3>
           <div class="small">Jan 2017–Dec 2019 • Abu Dhabi, UAE</div>
           <ul class="tight">
             <li>Lighting maintenance; drawings analysis; safety committees; overhead crane ops; elevator maintenance.</li>
-            <li>Method statements & risk assessments; approvals with agencies; policy updates; staff training.</li>
+            <li>Method statements & risk assessments; approvals; policy updates; training.</li>
           </ul>
-          <div class="small">From résumé details. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
+          <div class="small">From résumé. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
         </div>
         <div class="card">
           <h3>Electrical Engineer — TGCSS LLC</h3>
           <div class="small">Jan 2015–Jan 2017 • Abu Dhabi, UAE</div>
           <ul class="tight">
-            <li>Fire alarm & firefighting maintenance/rectification; acceptance testing (continuity & hi‑pot isolation).</li>
-            <li>Field safety resource for incident reporting and safe behaviors.</li>
+            <li>Fire alarm & firefighting systems; acceptance testing (continuity & hi‑pot/insulation); field safety support.</li>
           </ul>
-          <div class="small">From résumé details. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
+          <div class="small">From résumé. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
         </div>
         <div class="card">
           <h3>Electrical Engineer — EMRILL Services LLC</h3>
           <div class="small">Jan 2012–Jan 2015 • Abu Dhabi, UAE</div>
           <ul class="tight">
             <li>Pumps (transfer/booster/sump); LV panels/SMDB/DB testing; fire detection & alarm maintenance.</li>
-            <li>Installed/maintained systems to rigorous standards; product efficiency improvements.</li>
           </ul>
-          <div class="small">From résumé details. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
+          <div class="small">From résumé. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
         </div>
       </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div class="card">
-        <b>M.S., Computer Science — Merrimack College (North Andover, MA)</b><br/>
-        <span class="small">Expected Spring 2026</span>
-      </div>
-      <div class="card">
-        <b>B.S., Electrical Engineering — Hajvery University (Lahore, Pakistan)</b><br/>
-        <span class="small">2008–2012</span>
-      </div>
-      <div class="small">From résumé details. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
+      <div class="card"><b>M.S., Computer Science — Merrimack College (North Andover, MA)</b><br/><span class="small">Expected Spring 2026</span></div>
+      <div class="card"><b>B.S., Electrical Engineering — Hajvery University (Lahore, Pakistan)</b><br/><span class="small">2008–2012</span></div>
+      <div class="small">From résumé. [1](https://cmsiteam-my.sharepoint.com/personal/irfan_ahmed_crystalmoverservices_com/Documents/Microsoft%20Copilot%20Chat%20Files/Irfan_Resume_Oct%202025_updated.pdf)</div>
     </section>
 
     <section>
       <h2>Contact</h2>
       <p>Best way: mailto:engineerirfan21@gmail.comengineerirfan21@gmail.com</a></p>
-      <p class="muted">Open to Electrical/IT/Software/Automation roles — onsite in Chicago/Lombard or remote worldwide.</p>
+      <p class="small">Open to Electrical/IT/Software/Automation roles — onsite in Chicago/Lombard or remote worldwide.</p>
     </section>
 
     <p class="footer">© Irfan Ahmed • Fast, reliable, human‑friendly engineering.</p>
   </main>
+  <script src="assets/site.js"></script>
 </body>
 </html>
