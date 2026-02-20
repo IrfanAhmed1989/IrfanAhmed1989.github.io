@@ -1,46 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Irfan Ahmed – Engineer & Automation Specialist</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Irfan Ahmed — Engineer & Automation</title>
 <style>
- body { font-family: Arial; margin: 40px; line-height: 1.6; }
- h1 { color: #222; }
+  :root{
+    --bg:#ffffff; --fg:#1b1f23; --muted:#5c6670; --card:#f6f8fa; --link:#0366d6; --accent:#2b90d9;
+    --shadow: 0 4px 14px rgba(0,0,0,.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0d1117; --fg:#c9d1d9; --muted:#8b949e; --card:#161b22; --link:#58a6ff; --accent:#58a6ff; --shadow: 0 4px 14px rgba(0,0,0,.5);}
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
+  .wrap{max-width:920px;margin:40px auto;padding:0 20px}
+  h1{font-size:36px;margin-bottom:8px}
+  h2{margin-top:28px}
+  .muted{color:var(--muted)}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));}
+  .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;font-weight:600}
+  .btn:hover{opacity:.9}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .pill{background:var(--card);border-radius:999px;padding:6px 10px;box-shadow:var(--shadow)}
+  .kpi{display:flex;gap:20px;flex-wrap:wrap;margin-top:8px}
+  .kpi div{background:var(--card);padding:10px 12px;border-radius:10px;box-shadow:var(--shadow)}
+  .footer{margin:40px 0 20px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
+  <main class="wrap">
+    <header>
+      <h1>Hi, I'm Irfan Ahmed 👋</h1>
+      <p class="muted">Engineer across Electrical, IT, and Software — I build practical, reliable automation that solves real problems.</p>
+      <div class="row" style="margin-top:10px">
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        <a class="pill" href="https://github.com/IrfanAhmed1989" target="_blank">GitHub</a>
+        <a class="pill" href="mailto:engineerirfan21@gmail.com">Email</a>
+      </div>
+      <div class="kpi">
+        <div>Linux / macOS Automation</div>
+        <div>SCADA & Controls</div>
+        <div>Python / Shell / Java</div>
+        <div>GitHub Pages / Actions</div>
+      </div>
+    </header>
 
-<h1>Hi, I'm Irfan Ahmed 👋</h1>
-<p>
-I'm an engineer with strong experience across Electrical, IT, Software, and Automation systems.
-I build practical, clean, reliable engineering solutions using real-world fundamentals.
-</p>
+    <section>
+      <h2>About</h2>
+      <p>
+        My work spans maintenance engineering, SCADA/MMIS systems, troubleshooting, Linux automation,
+        availability reporting, and site/project coordination. I use terminal-first workflows to keep systems
+        <b>simple, fast, and dependable</b>.
+      </p>
+    </section>
 
-<h2>Skills</h2>
-<ul>
-  <li>Electrical Engineering — SCADA, Controls, Maintenance</li>
-  <li>IT Engineering — Linux, macOS, Networking, Automation</li>
-  <li>Software — Python, Shell/Bash, Java, GitHub Actions</li>
-  <li>Automation — Job Apply Engine, Global Remote Tagger, Resume Updater</li>
-</ul>
+    <section>
+      <h2>Skills</h2>
+      <div class="row">
+        <span class="pill">SCADA • Controls • Maintenance</span>
+        <span class="pill">Linux (Ubuntu) • macOS • Networking</span>
+        <span class="pill">Python • Bash/Shell • Java</span>
+        <span class="pill">GitHub • GitHub Actions • Virtualization</span>
+        <span class="pill">CI/CD • Logs • Monitoring</span>
+        <span class="pill">Automation • launchd • cron</span>
+      </div>
+    </section>
 
-<h2>Projects</h2>
-<ul>
-  <li>Automated Job Application Engine</li>
-  <li>Portfolio + Resume Auto-Updater</li>
-  <li>Global Remote Job Tagging System</li>
-  <li>Engineering Automation Scripts</li>
-</ul>
+    <section>
+      <h2>Highlighted Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Automated Job Application Engine</h3>
+          <p>Quiet, resume-attached, deduped, MX-validated email applications with daily schedules (200+/day) and global digests.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio + Resume Auto‑Updater</h3>
+          <p>One command to keep my GitHub Pages portfolio and resume.pdf up-to-date at all times.</p>
+        </div>
+        <div class="card">
+          <h3>Global Remote Tagger</h3>
+          <p>TLD-based classifier (.ca, .co.uk, .de, .sg) to enrich “Remote – Country” labels for worldwide roles.</p>
+        </div>
+        <div class="card">
+          <h3>Engineering Automation Scripts</h3>
+          <p>Linux/macOS scripts for reporting, maintenance, troubleshooting, and system health checks.</p>
+        </div>
+      </div>
+    </section>
 
-<h2>Resume</h2>
-<p>
-Download my resume: <a href="resume.pdf">Click here</a>
-</p>
+    <section>
+      <h2>Contact</h2>
+      <p>Best way: <a href="mailto:engineerirfan21@gmail.com">engineerirfan21@gmail.com</a></p>
+      <p class="muted">I’m open to Electrical/IT/Software/Automation roles — onsite in Chicago/Lombard or remote worldwide.</p>
+    </section>
 
-<h2>Links</h2>
-<p>
-<a href="https://github.com/IrfanAhmed1989">GitHub</a> |
-<a href="https://IrfanAhmed1989.github.io">Portfolio</a>
-</p>
-
+    <p class="footer">© Irfan Ahmed • Fast, reliable, human‑friendly engineering.</p>
+  </main>
 </body>
 </html>
