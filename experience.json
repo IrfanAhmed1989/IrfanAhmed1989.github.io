@@ -1,0 +1,70 @@
+{
+  "summary": "Electrical & IT Engineer with 10+ years across O&M and projects; SCADA/MMIS, preventive maintenance, availability reporting, troubleshooting; Linux automation; Python; safety & compliance.",
+  "roles": [
+    {
+      "title": "Operations & Maintenance Engineer",
+      "company": "Atlanta Airport SkyTrain (APM)",
+      "location": "Atlanta, GA, USA",
+      "start": "2021-01",
+      "end": "Present",
+      "highlights": [
+        "Preventive maintenance via MMIS; SCADA operations; failure trend analysis",
+        "Downtime/shift/availability reporting (DOA/STIP)",
+        "Documentation/drawing changes with engineering; technician/subcontractor training; safety; scheduling"
+      ],
+      "source": "resume"
+    },
+    {
+      "title": "Electrical Engineer",
+      "company": "Jupiter EMC LLC",
+      "location": "Abu Dhabi, UAE",
+      "start": "2017-01",
+      "end": "2019-12",
+      "highlights": [
+        "Lighting maintenance; drawings analysis; safety committees; overhead crane ops; elevator maintenance",
+        "Method statements & risk assessments; approvals; policy updates; training"
+      ],
+      "source": "resume"
+    },
+    {
+      "title": "Electrical Engineer",
+      "company": "TGCSS LLC",
+      "location": "Abu Dhabi, UAE",
+      "start": "2015-01",
+      "end": "2017-01",
+      "highlights": [
+        "Fire alarm & firefighting systems maintenance/rectification",
+        "Acceptance testing (continuity & hi‑pot isolation); field safety support"
+      ],
+      "source": "resume"
+    },
+    {
+      "title": "Electrical Engineer",
+      "company": "EMRILL Services LLC",
+      "location": "Abu Dhabi, UAE",
+      "start": "2012-01",
+      "end": "2015-01",
+      "highlights": [
+        "Pumps (transfer/booster/sump); LV panels/SMDB/DB testing",
+        "Fire detection & alarm maintenance; installation to rigorous standards"
+      ],
+      "source": "resume"
+    }
+  ],
+  "education": [
+    {
+      "program": "M.S., Computer Science",
+      "school": "Merrimack College",
+      "location": "North Andover, MA",
+      "dates": "Expected Spring 2026",
+      "source": "resume"
+    },
+    {
+      "program": "B.S., Electrical Engineering",
+      "school": "Hajvery University",
+      "location": "Lahore, Pakistan",
+      "dates": "2008–2012",
+      "source": "resume"
+    }
+  ]
+}
