@@ -9,18 +9,18 @@
 <body>
   <nav class="topnav">
     <div class="row">
-      index.htmlHome</a>
-      projects.htmlProjects</a>
-      experience.htmlExperience</a>
-      resume.pdfResume</a>
-      https://github.com/IrfanAhmed1989GitHub</a>
-      mailto:engineerirfan21@gmail.comEmail</a>
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="projects.html" data-page="projects.html">Projects</a>
+      <a href="experience.html" data-page="experience.html">Experience</a>
+      <a href="resume.pdf" id="resumeLink">Resume</a><span class="badge" id="resumeCount">0</span>
+      <a href="https://github.com/IrfanAhmed1989" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:engineerirfan21@gmail.com">Email</a>
     </div>
   </nav>
 
   <main class="wrap">
     <h1>Projects</h1>
-    <p class="small">Auto‑listing latest repositories from GitHub.</p>
+    <p class="small">Latest repositories from GitHub (IT automation + engineering).</p>
     <div id="list" class="grid"></div>
   </main>
 
@@ -30,19 +30,16 @@
     const res = await fetch(`https://api.github.com/users/${user}/repos?per_page=100&sort=updated`);
     const data = await res.json();
     const list = document.getElementById('list');
-    data
-      .filter(r => !r.fork)
-      .slice(0, 24)
-      .forEach(r => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <h3>${r.html_url}${r.name}</a></h3>
-          <p>${(r.description||'').substring(0,160)}</p>
-          <p>★ ${r.stargazers_count} • ${r.language || '—'}</p>
-        `;
-        list.appendChild(card);
-      });
+    data.filter(r => !r.fork).slice(0, 24).forEach(r => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <h3><a href="${r.html_url}" target="_blank" rel="noopener">${r.name}</a></h3>
+        <p>${(r.description||'').substring(0,160)}</p>
+        <p>★ ${r.stargazers_count} • ${r.language || '—'}</p>
+      `;
+      list.appendChild(card);
+    });
   })();
   </script>
   <script src="assets/site.js"></script>
