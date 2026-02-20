@@ -1,5 +1,5 @@
 {
-  "summary": "Electrical & IT Engineer with 10+ years across O&M and projects; SCADA/MMIS, preventive maintenance, availability reporting, troubleshooting; Linux automation; Python; safety & compliance.",
+  "summary": "IT/Electrical engineer with 10+ years across O&M and projects: Linux/macOS automation, SCADA/MMIS, preventive maintenance, availability reporting, troubleshooting, Python; safety & compliance.",
   "roles": [
     {
       "title": "Operations & Maintenance Engineer",
@@ -8,9 +8,9 @@
       "start": "2021-01",
       "end": "Present",
       "highlights": [
-        "Preventive maintenance via MMIS; SCADA operations; failure trend analysis",
-        "Downtime/shift/availability reporting (DOA/STIP)",
-        "Documentation/drawing changes with engineering; technician/subcontractor training; safety; scheduling"
+        "MMIS & SCADA operations; preventive maintenance; failure trend analysis",
+        "Availability/shift/downtime (DOA/STIP) reporting; documentation updates with engineering",
+        "Training/oversight of technicians and subcontractors; scheduling; safety compliance"
       ],
       "source": "resume"
     },
@@ -33,8 +33,8 @@
       "start": "2015-01",
       "end": "2017-01",
       "highlights": [
-        "Fire alarm & firefighting systems maintenance/rectification",
-        "Acceptance testing (continuity & hi‑pot isolation); field safety support"
+        "Fire alarm & firefighting maintenance/rectification; acceptance testing (continuity & hi‑pot/insulation)",
+        "Field safety resource for incident reporting and safe behaviors"
       ],
       "source": "resume"
     },
@@ -46,7 +46,7 @@
       "end": "2015-01",
       "highlights": [
         "Pumps (transfer/booster/sump); LV panels/SMDB/DB testing",
-        "Fire detection & alarm maintenance; installation to rigorous standards"
+        "Fire detection & alarm maintenance; rigorous installation/operations"
       ],
       "source": "resume"
     }
@@ -66,5 +66,12 @@
       "dates": "2008–2012",
       "source": "resume"
     }
+  ],
+  "it_skills": [
+    "Linux (Ubuntu) • macOS • Shell scripting",
+    "SCADA • MMIS • Availability/Shift/Downtime reports",
+    "Troubleshooting • RCA • Risk/Failure Trends",
+    "Python • SQL • Java • CSV/JSON pipelines",
+    "Automation: launchd/cron; GitHub Pages/Actions"
   ]
 }
