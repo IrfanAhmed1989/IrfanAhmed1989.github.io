@@ -1,32 +1,51 @@
 #!/bin/bash
 
-PROJECTS=$(ls projects)
+source data.txt
+
+PROJECTS=$(ls projects 2>/dev/null)
 
 cat > index.html <<EOL
 <!DOCTYPE html>
 <html>
 <head>
-<title>Irfan Ahmed | Portfolio</title>
+<title>$NAME | Portfolio</title>
+
 <style>
-body {background:#0f172a; color:white; font-family:Arial;}
-.card {background:#1e293b; padding:15px; margin:10px;}
+body {font-family: Arial; background:#0f172a; color:white;}
+section {max-width:900px; margin:auto; padding:30px;}
+.card {background:#1e293b; padding:20px; margin:10px; border-radius:10px;}
+.button {background:cyan; padding:10px; text-decoration:none; color:black;}
 </style>
+
 </head>
 
 <body>
 
-<h1>Irfan Ahmed</h1>
+<section>
+
+<h1>$NAME</h1>
+<p>$TITLE</p>
 
 <h2>Projects</h2>
 EOL
 
 for p in $PROJECTS; do
-echo "<div class='card'>$p</div>" >> index.html
+echo "<div class='card'><h3>$p</h3><p>Academic / Programming Project</p></div>" >> index.html
 done
 
 cat >> index.html <<EOL
+
+<h2>Links</h2>
+<a href="$GITHUB" class="button">GitHub</a><br>
+<a href="$LINKEDIN" class="button">LinkedIn</a><br>
+<p>Email: $EMAIL</p>
+
+<h2>Resume</h2>
+<a href="resume.pdf" class="button">Download Resume</a>
+
+</section>
 </body>
 </html>
 EOL
 
-echo "✅ Projects added"
+echo "✅ Clean professional site built"
