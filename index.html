@@ -1,108 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Irfan Ahmed | AI Engineer</title>
-
 <style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
-}
-
-/* Smooth scroll */
-html { scroll-behavior: smooth; }
-
-/* Header */
-header {
-  text-align: center;
-  padding: 50px;
-  animation: fadeIn 1s ease-in;
-}
-
-h1 { font-size: 2.5rem; }
-
-/* Sections */
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-  animation: fadeIn 1s ease-in;
-}
-
-/* Cards */
-.card {
-  background: #1e293b;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* Buttons */
-.button {
-  padding: 10px 15px;
-  background: cyan;
-  color: black;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-/* Toggle */
-.toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-
-/* Light mode */
-.light {
-  background: white;
-  color: black;
-}
-
-/* Chatbot */
-#chatbox {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 300px;
-  background: #1e293b;
-  border-radius: 10px;
-}
-
-#messages {
-  height: 200px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; }
-}
-
+body { margin:0; font-family:Arial; background:#0f172a; color:white; }
+header { text-align:center; padding:50px; }
+section { max-width:900px; margin:auto; padding:30px; }
+.card { background:#1e293b; padding:20px; margin:15px 0; border-radius:10px; }
+.button { padding:10px; background:cyan; color:black; border-radius:6px; text-decoration:none; display:inline-block; margin:5px; }
 </style>
 </head>
 
 <body>
-
-<button class="toggle" onclick="toggleMode()">🌙 Toggle</button>
 
 <header>
 <h1>Irfan Ahmed</h1>
@@ -110,78 +19,37 @@ input {
 </header>
 
 <section>
-<h2>🚀 Featured AI Project</h2>
-<div class="card">
-<h3>End-to-End ML System</h3>
-<p>Designed full ML pipeline: data → model → API deployment.</p>
-</div>
+<h2>About</h2>
+<p>I build AI and automation systems using Python, Java, and machine learning.</p>
 </section>
 
 <section>
-<h2>💻 Projects</h2>
+<h2>Projects</h2>
 
 <div class="card">
-<h3>Java Prime Checker</h3>
-<p>Converted C++ → Java with full behavior accuracy.</p>
-<a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
+<h3>Prime Checker (Java)</h3>
+https://github.com/IrfanAhmed1989View Project</a>
 </div>
 
 <div class="card">
-<h3>Automation Toolkit</h3>
-<p>Python scripts for automation and reporting workflows.</p>
-<a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
+<h3>Automation Tools</h3>
+<p>Python automation scripts for workflows.</p>
+github.com/IrfanAhmed1989">View GitHub</a>
 </div>
 
 </section>
 
 <section>
-<h2>🧠 Skills</h2>
-<p>Python • Java • Machine Learning • AI • Git • Automation</p>
-</section>
-
-<section>
-<h2>📄 Resume</h2>
+<h2>Resume</h2>
 <a href="resume.pdf" class="button">Download Resume</a>
 </section>
 
 <section>
-<h2>🔗 Links</h2>
+<h2>Links</h2>
 <a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
-<a href="https://linkedin.com/in/YOUR_LINKEDIN" class="button">LinkedIn</a>
+<a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
 </section>
-
-<!-- Chatbot -->
-<div id="chatbox">
-<div id="messages"></div>
-<input id="input" placeholder="Ask about me..." onkeypress="send(event)">
-</div>
-
-<script>
-function toggleMode() {
-  document.body.classList.toggle("light");
-}
-
-function send(e) {
-  if (e.key === "Enter") {
-    let input = document.getElementById("input");
-    let msg = input.value;
-    let box = document.getElementById("messages");
-
-    box.innerHTML += "<p><b>You:</b> " + msg + "</p>";
-
-    let reply = "Hi! I'm Irfan's AI assistant 🤖";
-
-    if (msg.includes("skills")) reply = "Python, Java, ML, AI";
-    if (msg.includes("projects")) reply = "See projects above!";
-    if (msg.includes("contact")) reply = "Contact via LinkedIn";
-
-    box.innerHTML += "<p><b>Bot:</b> " + reply + "</p>";
-
-    input.value = "";
-    box.scrollTop = box.scrollHeight;
-  }
-}
-</script>
 
 </body>
 </html>
+
