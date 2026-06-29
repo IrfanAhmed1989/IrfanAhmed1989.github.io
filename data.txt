@@ -1,5 +1,5 @@
-NAME=Irfan Ahmed
-TITLE=IT, Automation & Electrical Engineer
-GITHUB=https://github.com/IrfanAhmed1989
-LINKEDIN=https://www.linkedin.com/in/irfan-a-a68bb6145
-EMAIL=engineerirfan21@gmail.com
+NAME="Irfan Ahmed"
+TITLE="IT, Automation & Electrical Engineer"
+GITHUB="https://github.com/IrfanAhmed1989"
+LINKEDIN="https://www.linkedin.com/in/irfan-a-a68bb6145"
+EMAIL="engineerirfan21@gmail.com"
