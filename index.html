@@ -9,68 +9,108 @@ body {
   margin:0;
   font-family: Arial;
   background:#0f172a;
-  color:white;
+  color:#e2e8f0;
 }
 
+/* HERO SECTION */
+header {
+  text-align:center;
+  padding:70px 20px;
+  background:#020617;
+}
+
+header h1 {
+  margin:0;
+  font-size:2.7rem;
+}
+
+header p {
+  margin-top:10px;
+  color:#38bdf8;
+  font-size:1.2rem;
+}
+
+/* MAIN */
 section {
   max-width:900px;
   margin:auto;
   padding:40px;
 }
 
-h1 {
-  text-align:center;
-}
-
+/* TITLES */
 h2 {
-  margin-top:30px;
-  border-bottom:2px solid cyan;
+  margin-top:40px;
+  border-bottom:2px solid #38bdf8;
   padding-bottom:5px;
 }
 
+/* TEXT */
 p {
-  line-height:1.6;
+  line-height:1.7;
 }
 
+/* CARDS */
 .card {
   background:#1e293b;
   padding:20px;
   margin:15px 0;
-  border-radius:10px;
+  border-radius:12px;
+  transition:0.3s;
 }
 
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* BUTTONS */
 .button {
-  background:cyan;
+  background:#38bdf8;
   color:black;
   padding:10px 15px;
-  text-decoration:none;
   border-radius:6px;
+  text-decoration:none;
   display:inline-block;
-  margin:5px 10px 5px 0;
+  margin-top:10px;
 }
 
-.link-group {
+/* SMALL TEXT */
+.highlight {
+  background:#020617;
+  padding:15px;
+  border-radius:8px;
   margin-top:15px;
 }
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  margin-top:30px;
+  font-size:0.9rem;
+}
+
 </style>
 </head>
 
 <body>
 
-<section>
-
+<header>
 <h1>Irfan Ahmed</h1>
-<p style="text-align:center;">
-IT, Automation & Electrical Engineer
-</p>
+<p>IT, Automation & Electrical Engineer</p>
+</header>
+
+<section>
 
 <!-- SUMMARY -->
 <h2>Professional Summary</h2>
 <p>
-Results-driven IT & Automation Engineer with 10+ years of experience in SCADA systems,
-system reliability, and Python-based automation. Skilled in troubleshooting,
-monitoring, and maintaining critical infrastructure systems.
+Results-driven IT & Automation Engineer with 10+ years of experience in SCADA systems, system reliability, and Python-based automation. Skilled in troubleshooting, monitoring, and maintaining critical infrastructure systems.
 </p>
+
+<div class="highlight">
+Focused on building reliable, efficient, and scalable engineering solutions.
+</div>
 
 <!-- PROJECTS -->
 <h2>Projects</h2>
@@ -88,7 +128,7 @@ monitoring, and maintaining critical infrastructure systems.
 
 <div class="card">
 <h3>Smart Home Project</h3>
-<p>Simulation-based project for home automation and smart control systems.</p>
+<p>Simulation-based system for smart home automation and control.</p>
 </div>
 
 <!-- EXPERIENCE -->
@@ -97,18 +137,18 @@ monitoring, and maintaining critical infrastructure systems.
 <div class="card">
 <h3>Operations & Maintenance Engineer — Atlanta Airport</h3>
 <p>
-• SCADA monitoring and system control  
-• Downtime and reliability analysis  
-• Preventive maintenance and troubleshooting  
+• SCADA monitoring and system control<br>
+• Downtime and reliability analysis<br>
+• Preventive maintenance and troubleshooting
 </p>
 </div>
 
 <div class="card">
 <h3>Electrical Engineer — UAE</h3>
 <p>
-• Fire alarm and infrastructure systems  
-• Testing and commissioning  
-• Field engineering operations  
+• Fire alarm and infrastructure systems<br>
+• Testing and commissioning<br>
+• Field engineering operations
 </p>
 </div>
 
@@ -121,10 +161,8 @@ Python • Java • SCADA • Automation • Systems Engineering • Troubleshoo
 <!-- LINKS -->
 <h2>Links</h2>
 
-<div class="link-group">
 <a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
 <a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
-</div>
 
 <p>Email: engineerirfan21@gmail.com</p>
 
@@ -132,12 +170,11 @@ Python • Java • SCADA • Automation • Systems Engineering • Troubleshoo
 <h2>Resume</h2>
 <a href="resume.pdf" class="button">Download Resume</a>
 
-<!-- FINAL LINE -->
-<p style="margin-top:30px;">
-Open to IT, Automation, and Systems Engineering opportunities.
-</p>
-
 </section>
+
+<footer>
+<p>Open to IT, Automation & Systems Engineering opportunities</p>
+</footer>
 
 </body>
 </html>
