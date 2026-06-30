@@ -8,56 +8,81 @@
 body {
   margin:0;
   font-family: Arial;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
   color:#e2e8f0;
 }
 
+/* HERO */
 header {
   text-align:center;
-  padding:100px 20px;
+  padding:110px 20px;
   background:#020617;
 }
 
 header h1 {
   margin:0;
-  font-size:3.2rem;
+  font-size:3.4rem;
 }
 
 header p {
   color:#38bdf8;
-  font-size:1.3rem;
-  font-weight:bold;
-}
-
-section {
-  max-width:900px;
-  margin:auto;
-  padding:50px 30px;
-}
-
-h2 {
-  margin-top:50px;
-  border-bottom:2px solid #38bdf8;
-}
-
-.card {
-  background:#1e293b;
-  padding:25px;
-  margin:20px 0;
-  border-radius:12px;
-}
-
-.button {
-  background:#38bdf8;
-  color:black;
-  padding:12px 18px;
-  border-radius:6px;
-  text-decoration:none;
-  display:inline-block;
+  font-size:1.4rem;
   margin-top:10px;
   font-weight:bold;
 }
 
+/* SECTION */
+section {
+  max-width:950px;
+  margin:auto;
+  padding:50px 30px;
+}
+
+/* TITLES */
+h2 {
+  margin-top:50px;
+  border-bottom:2px solid #38bdf8;
+  padding-bottom:8px;
+}
+
+/* TEXT */
+p {
+  line-height:1.8;
+}
+
+/* CARDS */
+.card {
+  background: rgba(30,41,59,0.8);
+  padding:25px;
+  margin:20px 0;
+  border-radius:14px;
+  border:1px solid #334155;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  border-color:#38bdf8;
+}
+
+/* BUTTON */
+.button {
+  background:#38bdf8;
+  color:black;
+  padding:12px 20px;
+  border-radius:6px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:12px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.button:hover {
+  background:white;
+}
+
+/* HIGHLIGHT */
 .highlight {
   background:#020617;
   padding:20px;
@@ -67,9 +92,10 @@ h2 {
 
 footer {
   text-align:center;
-  padding:20px;
+  padding:25px;
   background:#020617;
   margin-top:40px;
+  font-size:0.9rem;
 }
 </style>
 
@@ -87,40 +113,32 @@ footer {
 <h2>Professional Summary</h2>
 <p>
 Multi-disciplinary Engineer with 10+ years of experience across Electrical Engineering,
-IT systems, SCADA operations, and software-based automation. Skilled in troubleshooting,
-system administration, infrastructure support, and Python/Java-based solutions.
+IT systems, and SCADA-based operations. Proven ability to troubleshoot complex systems,
+support critical infrastructure, and build automation solutions using Python and Java.
 </p>
 
 <div class="highlight">
-✔ Electrical systems & infrastructure engineering<br>
-✔ IT systems support, troubleshooting & reliability<br>
-✔ SCADA systems & real-time operations<br>
-✔ Python & Java programming for automation
+✔ Electrical Infrastructure & Site Engineering<br>
+✔ IT Systems, Troubleshooting & Reliability<br>
+✔ SCADA & Real-Time Operations<br>
+✔ Software & Automation (Python, Java)
 </div>
 
 <h2>Core Expertise</h2>
 
 <div class="card">
 <h3>IT & Systems Engineering</h3>
-<p>
-System troubleshooting, IT support, system monitoring, infrastructure reliability,
-and problem-solving in production environments.
-</p>
+<p>System troubleshooting, IT support, infrastructure reliability, and monitoring of production systems.</p>
 </div>
 
 <div class="card">
 <h3>Automation & Software</h3>
-<p>
-Python and Java development, automation tools, workflow optimization,
-and system scripting.
-</p>
+<p>Python and Java development, automation tools, system scripting, and workflow optimization.</p>
 </div>
 
 <div class="card">
-<h3>Electrical & Site Engineering</h3>
-<p>
-Power systems, fire alarms, commissioning, infrastructure, and field operations.
-</p>
+<h3>Electrical & Field Engineering</h3>
+<p>Power systems, fire alarms, commissioning, infrastructure systems, and site operations.</p>
 </div>
 
 <h2>Professional Experience</h2>
@@ -128,18 +146,18 @@ Power systems, fire alarms, commissioning, infrastructure, and field operations.
 <div class="card">
 <h3>Operations & Maintenance Engineer — Atlanta Airport</h3>
 <p>
-• Supported SCADA and IT-integrated systems<br>
-• Performed system monitoring and troubleshooting<br>
-• Improved system reliability and uptime
+• Managed SCADA-integrated infrastructure systems<br>
+• Performed system monitoring, troubleshooting, and downtime analysis<br>
+• Ensured high system reliability for mission-critical operations
 </p>
 </div>
 
 <div class="card">
 <h3>Electrical Engineer — UAE</h3>
 <p>
-• Infrastructure systems and field operations<br>
-• Testing, commissioning, and troubleshooting<br>
-• Electrical and fire alarm systems support
+• Supported electrical infrastructure and site operations<br>
+• Conducted testing, commissioning, and system validation<br>
+• Worked on fire alarm and control systems
 </p>
 </div>
 
@@ -147,7 +165,7 @@ Power systems, fire alarms, commissioning, infrastructure, and field operations.
 
 <div class="card">
 <h3>Engineering Projects Repository</h3>
-<p>Java, Python, and IT/engineering system projects.</p>
+<p>Java, Python, and IT/engineering system projects demonstrating automation and problem solving.</p>
 <a href="https://github.com/IrfanAhmed1989/engineering-projects" class="button">View Projects</a>
 </div>
 
@@ -169,7 +187,7 @@ Python • Java • IT Support • System Troubleshooting • SCADA • Automati
 </section>
 
 <footer>
-<p>Open to IT, Electrical, Automation & Systems Engineering Roles</p>
+<p>Open to Electrical, IT, Automation, and Systems Engineering Roles</p>
 </footer>
 
 </body>
