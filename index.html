@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Irfan Ahmed Portfolio</title>
+<title>Irfan Ahmed | Engineer</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0f172a, #020617);
-  color: #e2e8f0;
+  margin:0;
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
 }
 
+/* CENTER CONTENT */
 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-h1 { font-size: 40px; text-align:center; }
-h2 { color: #38bdf8; }
-
-.card {
-  background: rgba(30,41,59,0.8);
-  padding: 20px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
-
-.card:hover { transform: translateY(-5px); }
-
-.button {
-  background: #38bdf8;
-  color: black;
-  padding: 10px 15px;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.footer {
+  max-width:700px;
+  margin:auto;
+  padding:40px 20px;
   text-align:center;
-  margin-top:20px;
+}
+
+h1 {
+  margin-bottom:5px;
+}
+
+.subtitle {
+  color:#38bdf8;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+
+h2 {
+  margin-top:30px;
+  border-bottom:1px solid #38bdf8;
+  padding-bottom:5px;
+}
+
+/* BUTTONS */
+.button {
+  background:#38bdf8;
+  color:black;
+  padding:8px 14px;
+  text-decoration:none;
+  border-radius:5px;
+  margin:5px;
+  display:inline-block;
+}
+
+.button:hover {
+  background:white;
+}
+
+footer {
+  margin-top:40px;
+  font-size:0.8rem;
+  color:gray;
 }
 </style>
+
 </head>
 
 <body>
@@ -52,30 +65,37 @@ h2 { color: #38bdf8; }
 <div class="container">
 
 <h1>Irfan Ahmed</h1>
-<p style="text-align:center;">Electrical | IT | Automation | Systems Engineer</p>
-
-<div class="card">
-<h2>Professional Summary</h2>
-<p>10+ years experience in Electrical, IT Systems, SCADA & Automation.</p>
+<div class="subtitle">
+Electrical | IT | Automation | Systems Engineer
 </div>
 
-<div class="card">
+<h2>Professional Summary</h2>
+<p>
+10+ years experience in Electrical, IT Systems, SCADA & Automation.
+</p>
+
+<p>
+✔ SCADA systems<br>
+✔ IT troubleshooting<br>
+✔ Python & Java automation
+</p>
+
 <h2>Skills</h2>
 <p>Python • Java • SCADA • Automation • IT Support</p>
-</div>
 
-<div class="card">
 <h2>Contact</h2>
-<p>
-<a href="https://github.com/IrfanAhmed1989">GitHub</a> |
-<a href="https://linkedin.com">LinkedIn</a>
-</p>
-<p>Email: engineerirfan21@gmail.com</p>
-</div>
 
-<div class="footer">
+<a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
+<a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
+
+<p>Email: engineerirfan21@gmail.com</p>
+
+<h2>Resume</h2>
+<a href="resume.pdf" class="button">Download Resume</a>
+
+<footer>
 © 2026 Irfan Ahmed
-</div>
+</footer>
 
 </div>
 
