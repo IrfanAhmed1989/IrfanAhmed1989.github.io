@@ -5,6 +5,12 @@
 <title>Irfan Ahmed | Engineer</title>
 
 <style>
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin:0;
   font-family: -apple-system, BlinkMacSystemFont, Arial;
@@ -21,18 +27,16 @@ header {
 header h1 {
   font-size:3.5rem;
   margin:0;
-  font-weight:600;
 }
 
 header p {
   color:#9ca3af;
   margin-top:10px;
-  font-size:1.2rem;
 }
 
 /* SECTION */
 section {
-  max-width:800px;
+  max-width:850px;
   margin:auto;
   padding:40px 20px;
 }
@@ -40,25 +44,22 @@ section {
 /* TITLES */
 h2 {
   margin-top:60px;
-  font-weight:500;
-  font-size:1.6rem;
-  color:#f9fafb;
 }
 
 /* CARD */
 .card {
-  background:rgba(255,255,255,0.03);
+  background:rgba(255,255,255,0.04);
   padding:25px;
   margin-top:15px;
   border-radius:14px;
   border:1px solid rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
   transition:0.3s;
 }
 
+/* CARD ANIMATION */
 .card:hover {
-  transform:translateY(-5px);
-  background:rgba(255,255,255,0.05);
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.06);
 }
 
 /* BUTTON */
@@ -70,7 +71,6 @@ h2 {
   text-decoration:none;
   display:inline-block;
   margin-top:15px;
-  margin-right:10px;
   font-size:0.9rem;
   transition:0.3s;
 }
@@ -79,10 +79,11 @@ h2 {
   opacity:0.8;
 }
 
-/* TEXT */
-p {
-  line-height:1.7;
-  color:#9ca3af;
+/* PROJECT IMAGE */
+.project-img {
+  width:100%;
+  border-radius:10px;
+  margin-top:10px;
 }
 
 /* FOOTER */
@@ -90,10 +91,10 @@ footer {
   text-align:center;
   padding:40px;
   color:#6b7280;
-  font-size:0.85rem;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -107,58 +108,59 @@ footer {
 
 <h2>Professional Summary</h2>
 <div class="card">
-<p>
-Results-driven Multi-Disciplinary Engineer with 10+ years of experience across Electrical Engineering, IT Systems, SCADA operations, and software-based automation.
-</p>
+10+ years experience in Electrical, IT Systems, SCADA & Automation.<br><br>
 
-<p>
-✔ 10+ years experience<br>
-✔ SCADA systems expertise<br>
-✔ IT troubleshooting & reliability<br>
+✔ SCADA systems<br>
+✔ IT troubleshooting<br>
 ✔ Python & Java automation
-</p>
 </div>
 
 <h2>Education</h2>
 
 <div class="card">
-<p><b>PhD in Artificial Intelligence — In Progress</b><br>
-Advanced Systems, AI, Software Engineering, Automation</p>
+<b>PhD in Artificial Intelligence — In Progress</b><br>
+Advanced Systems, AI, Software Engineering, Automation
 </div>
 
 <div class="card">
-<p><b>MS Computer Science — 2026</b><br>
-Software Development, Systems, Programming</p>
+<b>MS Computer Science — 2026</b><br>
+Software Development, Systems, Programming
 </div>
 
 <div class="card">
-<p><b>BS Electrical Engineering — 2008</b><br>
-Power Systems, Infrastructure</p>
+<b>BS Electrical Engineering — 2008</b><br>
+Power Systems, Infrastructure
 </div>
 
 <h2>Core Expertise</h2>
 
 <div class="card">
-<p><b>IT & Systems:</b> troubleshooting, monitoring, support</p>
-<p><b>Automation:</b> Python, Java, scripting</p>
-<p><b>Electrical:</b> infrastructure, commissioning</p>
+<b>IT & Systems:</b> troubleshooting, monitoring, support<br>
+<b>Automation:</b> Python, Java, scripting<br>
+<b>Electrical:</b> infrastructure, commissioning
 </div>
 
 <h2>Experience</h2>
 
 <div class="card">
-<p><b>Operations & Maintenance Engineer — Atlanta Airport</b><br>
-SCADA monitoring, troubleshooting, reliability</p>
+<b>Atlanta Airport</b><br>
+SCADA monitoring, troubleshooting, reliability
 </div>
 
 <div class="card">
-<p><b>Electrical Engineer — UAE</b><br>
-Infrastructure, commissioning, fire alarm systems</p>
+<b>Electrical Engineer — UAE</b><br>
+Infrastructure, commissioning, fire alarm systems
 </div>
 
 <h2>Projects</h2>
 
 <div class="card">
+<b>Engineering Projects Repository</b><br>
+
+<!-- PROJECT IMAGE (PLACEHOLDER) -->
+<img src="https://via.placeholder.com/800x400" class="project-img">
+
+<br>
 <a href="https://github.com/IrfanAhmed1989/engineering-projects" class="button">View Projects</a>
 </div>
 
