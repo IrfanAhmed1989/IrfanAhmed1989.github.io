@@ -21,7 +21,7 @@ body {
 /* HEADER */
 header {
   text-align:center;
-  padding:120px 20px 80px;
+  padding:120px 20px;
 }
 
 header h1 {
@@ -31,7 +31,6 @@ header h1 {
 
 header p {
   color:#9ca3af;
-  margin-top:10px;
 }
 
 /* SECTION */
@@ -46,20 +45,35 @@ h2 {
   margin-top:60px;
 }
 
-/* CARD */
+/* CARD BASE */
 .card {
   background:rgba(255,255,255,0.04);
   padding:25px;
   margin-top:15px;
   border-radius:14px;
   border:1px solid rgba(255,255,255,0.05);
-  transition:0.3s;
+  
+  opacity:0;
+  transform:translateY(30px);
+  animation:fadeUp 0.8s forwards;
 }
 
-/* CARD ANIMATION */
+/* DELAY EFFECT */
+.card:nth-child(1){animation-delay:0.2s;}
+.card:nth-child(2){animation-delay:0.4s;}
+.card:nth-child(3){animation-delay:0.6s;}
+.card:nth-child(4){animation-delay:0.8s;}
+
+@keyframes fadeUp {
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* HOVER */
 .card:hover {
   transform:translateY(-6px);
-  background:rgba(255,255,255,0.06);
 }
 
 /* BUTTON */
@@ -71,7 +85,6 @@ h2 {
   text-decoration:none;
   display:inline-block;
   margin-top:15px;
-  font-size:0.9rem;
   transition:0.3s;
 }
 
@@ -79,14 +92,24 @@ h2 {
   opacity:0.8;
 }
 
-/* PROJECT IMAGE */
+/* PROJECT GRID */
+.project-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:15px;
+}
+
 .project-img {
   width:100%;
   border-radius:10px;
-  margin-top:10px;
+  transition:0.3s;
 }
 
-/* FOOTER */
+.project-img:hover {
+  transform:scale(1.05);
+}
+
 footer {
   text-align:center;
   padding:40px;
@@ -94,7 +117,6 @@ footer {
 }
 
 </style>
-
 </head>
 
 <body>
@@ -118,50 +140,51 @@ footer {
 <h2>Education</h2>
 
 <div class="card">
-<b>PhD in Artificial Intelligence — In Progress</b><br>
-Advanced Systems, AI, Software Engineering, Automation
+<b>PhD in Artificial Intelligence — In Progress</b>
 </div>
 
 <div class="card">
-<b>MS Computer Science — 2026</b><br>
-Software Development, Systems, Programming
+<b>MS Computer Science — 2026</b>
 </div>
 
 <div class="card">
-<b>BS Electrical Engineering — 2008</b><br>
-Power Systems, Infrastructure
+<b>BS Electrical Engineering — 2008</b>
 </div>
 
 <h2>Core Expertise</h2>
 
 <div class="card">
-<b>IT & Systems:</b> troubleshooting, monitoring, support<br>
-<b>Automation:</b> Python, Java, scripting<br>
-<b>Electrical:</b> infrastructure, commissioning
+<b>IT & Systems:</b> troubleshooting, monitoring<br>
+<b>Automation:</b> Python, Java<br>
+<b>Electrical:</b> infrastructure
 </div>
 
 <h2>Experience</h2>
 
 <div class="card">
 <b>Atlanta Airport</b><br>
-SCADA monitoring, troubleshooting, reliability
+SCADA monitoring, troubleshooting
 </div>
 
 <div class="card">
-<b>Electrical Engineer — UAE</b><br>
-Infrastructure, commissioning, fire alarm systems
+<b>Electrical Engineer — UAE</b>
 </div>
 
 <h2>Projects</h2>
 
 <div class="card">
-<b>Engineering Projects Repository</b><br>
 
-<!-- PROJECT IMAGE (PLACEHOLDER) -->
-<img src="https://via.placeholder.com/800x400" class="project-img">
+<div class="project-grid">
 
-<br>
+<img src="https://via.placeholder.com/400x250" class="project-img">
+<img src="https://via.placeholder.com/400x250" class="project-img">
+<img src="https://via.placeholder.com/400x250" class="project-img">
+<img src="https://via.placeholder.com/400x250" class="project-img">
+
+</div>
+
 <a href="https://github.com/IrfanAhmed1989/engineering-projects" class="button">View Projects</a>
+
 </div>
 
 <h2>Skills</h2>
@@ -175,7 +198,6 @@ Python • Java • SCADA • Automation • IT Support • Electrical Systems
 <div class="card">
 <a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
 <a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
-
 <p>Email: engineerirfan21@gmail.com</p>
 </div>
 
